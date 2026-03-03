@@ -64,7 +64,7 @@ export default function HowItWorks() {
             <div className="relative overflow-hidden rounded-2xl bg-teal p-7 sm:p-9 md:col-span-3">
               {/* Watermark percentage */}
               <div
-                className="pointer-events-none absolute -right-3 -bottom-6 select-none font-serif text-[140px] font-bold leading-none text-white/[0.05] sm:text-[180px]"
+                className="pointer-events-none absolute -right-3 -bottom-6 select-none font-serif text-[140px] font-bold leading-none tracking-wider text-white/[0.05] sm:text-[180px]"
                 aria-hidden="true"
               >
                 80%
@@ -100,7 +100,7 @@ export default function HowItWorks() {
             <div className="relative overflow-hidden rounded-2xl border-2 border-terracotta/15 bg-white p-7 sm:p-9 md:col-span-2">
               {/* Watermark percentage */}
               <div
-                className="pointer-events-none absolute -right-2 -bottom-5 select-none font-serif text-[120px] font-bold leading-none text-terracotta/[0.06] sm:text-[150px]"
+                className="pointer-events-none absolute -right-2 -bottom-5 select-none font-serif text-[120px] font-bold leading-none tracking-wider text-terracotta/[0.06] sm:text-[150px]"
                 aria-hidden="true"
               >
                 20%

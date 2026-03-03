@@ -55,7 +55,7 @@ export default function OutcomeShowcase() {
           <div className="relative overflow-hidden rounded-2xl bg-teal p-6 sm:p-10">
             {/* Watermark */}
             <div
-              className="pointer-events-none absolute right-4 bottom-2 select-none font-serif text-[100px] font-bold leading-none text-white/[0.03] sm:text-[140px]"
+              className="pointer-events-none absolute right-4 bottom-2 select-none font-serif text-[100px] font-bold leading-none tracking-wider text-white/[0.03] sm:text-[140px]"
               aria-hidden="true"
             >
               CERTIFIED
@@ -90,7 +90,7 @@ export default function OutcomeShowcase() {
                         {score.label}
                       </span>
                     </div>
-                    <p className="font-serif text-2xl font-bold text-white sm:text-3xl">
+                    <p className="font-serif text-2xl font-bold tracking-wide text-white sm:text-3xl">
                       {score.value}
                     </p>
                     <p className="mt-1 text-[11px] text-white/35">

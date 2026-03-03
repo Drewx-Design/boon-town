@@ -98,7 +98,7 @@ function ScoreBadge({
         <div className="text-[9px] font-medium uppercase tracking-wider text-charcoal-light/60">
           {label}
         </div>
-        <div className="text-xs font-semibold text-sage">{value}</div>
+        <div className="text-xs font-semibold tracking-wide text-sage">{value}</div>
       </div>
     </m.div>
   );
