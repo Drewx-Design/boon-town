@@ -1,43 +1,5 @@
-"use client";
-
-import { useEffect, useRef } from "react";
+import { Shield } from "lucide-react";
 import SectionReveal from "./SectionReveal";
-
-function AnimatedCounter({ target }: { target: number }) {
-  const ref = useRef<HTMLSpanElement>(null);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          observer.disconnect();
-          const duration = 1500;
-          const start = performance.now();
-
-          function update(now: number) {
-            if (!el) return;
-            const elapsed = now - start;
-            const progress = Math.min(elapsed / duration, 1);
-            const eased = 1 - Math.pow(1 - progress, 3);
-            el.textContent = Math.round(eased * target).toLocaleString();
-            if (progress < 1) requestAnimationFrame(update);
-          }
-
-          requestAnimationFrame(update);
-        }
-      },
-      { threshold: 0.5 }
-    );
-
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [target]);
-
-  return <span ref={ref}>0</span>;
-}
 
 export default function SocialProof() {
   return (
@@ -49,37 +11,56 @@ export default function SocialProof() {
           </h2>
         </SectionReveal>
 
+        {/* Real human testimonial */}
         <SectionReveal className="mb-12">
-          <div className="mx-auto max-w-2xl rounded-2xl border border-teal/6 bg-white p-8 text-center shadow-sm">
-            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-teal/8">
-              <span className="font-serif text-xl font-bold text-teal">
-                BT
-              </span>
+          <div className="mx-auto max-w-2xl rounded-2xl border border-teal/6 bg-white p-8 shadow-sm">
+            <p className="mb-5 font-serif text-lg leading-relaxed text-charcoal sm:text-xl">
+              &ldquo;I used to spend 40 hours on a single federal proposal.
+              The compliance alone was a full-time job. Having something that
+              handles the structure so I can focus on telling our story &mdash;
+              that&apos;s what I&apos;ve been asking for.&rdquo;
+            </p>
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal/8">
+                <span className="font-serif text-sm font-bold tracking-wider text-teal">
+                  MT
+                </span>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-charcoal">
+                  Maria Torres
+                </p>
+                <p className="text-xs text-charcoal-light">
+                  Executive Director, Bright Futures Youth Alliance
+                </p>
+              </div>
             </div>
-            <p className="mb-2 leading-relaxed text-charcoal-light">
-              &ldquo;Built alongside grant professionals who told us the same
-              thing: the compliance and paperwork burns people out, but the
-              mission narrative is where the magic happens. So we built a
-              system that handles the 80% &mdash; so you never lose the
-              20% that matters.&rdquo;
-            </p>
-            <p className="text-sm font-medium text-teal">
-              The Boon Town Team
-            </p>
           </div>
         </SectionReveal>
 
+        {/* AI disclosure — promoted from FAQ */}
         <SectionReveal className="mb-12">
-          <div className="mx-auto max-w-md rounded-2xl border border-teal/8 bg-sage-light p-6 text-center">
-            <p className="font-serif text-3xl font-bold text-teal">
-              <AnimatedCounter target={1247} />
-            </p>
-            <p className="mt-1 text-sm text-charcoal-light">
-              nonprofit leaders on the waitlist
+          <div className="mx-auto max-w-2xl rounded-2xl border-2 border-teal/10 bg-teal/[0.02] p-8">
+            <div className="mb-4 flex items-center gap-3">
+              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-teal/8">
+                <Shield className="h-4 w-4 text-teal" />
+              </div>
+              <h3 className="font-serif text-lg font-semibold text-teal">
+                &ldquo;Will funders know AI was involved?&rdquo;
+              </h3>
+            </div>
+            <p className="leading-relaxed text-charcoal-light">
+              We check every target funder&apos;s AI disclosure policy before
+              producing your deliverable. If disclosure is required, we draft
+              the language for you. Your authorship is preserved &mdash; you
+              provide the mission context, review every section, and approve the
+              final submission. We&apos;re the only platform that checks your
+              proposal against the latest funder AI guidelines.
             </p>
           </div>
         </SectionReveal>
 
+        {/* Integration logos */}
         <SectionReveal>
           <p className="mb-6 text-center text-xs font-medium uppercase tracking-widest text-charcoal-light/40">
             Works with the grant systems you already use
@@ -96,6 +77,7 @@ export default function SocialProof() {
           </div>
         </SectionReveal>
 
+        {/* AI scoring hook */}
         <SectionReveal className="mt-14">
           <div className="mx-auto max-w-2xl rounded-2xl border border-terracotta/10 bg-terracotta/[0.03] p-8 text-center">
             <p className="font-serif text-xl font-semibold leading-snug text-teal sm:text-2xl">

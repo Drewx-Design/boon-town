@@ -50,7 +50,7 @@ export default function PricingPreview() {
             Not the tool.
           </h2>
           <p className="mx-auto mb-6 max-w-xl text-center text-charcoal-light">
-            Like TurboTax for grants &mdash; you pay per completed deliverable,
+            You pay when the work is done &mdash; per completed deliverable,
             not for a monthly subscription to a blank page. A fraction of what
             a grant consultant charges.
           </p>

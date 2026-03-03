@@ -7,12 +7,12 @@ import SectionReveal from "./SectionReveal";
 
 const faqs = [
   {
-    q: "Is this just ChatGPT with a grant template?",
-    a: "No. ChatGPT produces generic text. Boon Town produces compliance-checked, budget-coherent, voice-matched deliverables with quality scores you can verify before submitting. Every deliverable passes 6 diagnostic checks that no chatbot performs.",
+    q: "Does Boon Town write the whole proposal for me?",
+    a: "No \u2014 and that\u2019s by design. We handle the 80% that burns your time: compliance parsing, budget construction, requirement mapping, funder alignment. You own the 20% that matters most: your mission story, your organizational voice, your strategic vision. We guarantee the structure. You guarantee the soul.",
   },
   {
-    q: "Will funders know AI was involved?",
-    a: "We check every target funder\u2019s AI disclosure policy before producing your deliverable. If disclosure is required, we draft the language for you. Your authorship is preserved \u2014 you provide the mission context, review every section, and approve the final submission.",
+    q: "Is this just ChatGPT with a grant template?",
+    a: "No. ChatGPT produces generic text. Boon Town produces compliance-checked, budget-coherent, voice-matched deliverables with quality scores you can verify before submitting. Every deliverable passes 6 diagnostic checks that no chatbot performs.",
   },
   {
     q: "Is my organizational data safe?",
@@ -23,16 +23,12 @@ const faqs = [
     a: "You review everything before paying. Technical issues get unlimited automated fixes. Voice and tone adjustments get two revision rounds. If you\u2019re still not satisfied, you receive a 50% service credit.",
   },
   {
-    q: "What about post-award compliance?",
-    a: "After you win, we help you stay compliant \u2014 progress reports, financial reporting alerts, and audit-ready documentation so you never miss a deadline.",
-  },
-  {
     q: "How is this different from hiring a grant consultant?",
     a: "A consultant takes weeks and charges thousands per proposal. We deliver the compliance, budget, and structural work in days \u2014 with quality scores they can\u2019t match. You stay in control of the narrative. Many consultants are joining as partners to serve more clients at better margins.",
   },
   {
-    q: "Does Boon Town write the whole proposal for me?",
-    a: "No \u2014 and that\u2019s by design. We handle the 80% that burns your time: compliance parsing, budget construction, requirement mapping, funder alignment. You own the 20% that matters most: your mission story, your organizational voice, your strategic vision. Think TurboTax \u2014 we guarantee the calculations, you guarantee the data.",
+    q: "What about post-award compliance?",
+    a: "After you win, we help you stay compliant \u2014 progress reports, financial reporting alerts, and audit-ready documentation so you never miss a deadline.",
   },
 ];
 

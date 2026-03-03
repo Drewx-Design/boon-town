@@ -18,12 +18,12 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Boon Town — Grant Proposals, Handled",
+  title: "Boon Town — Grant Relief for Small Nonprofits",
   description:
     "Submission-ready grant narratives, budgets, and compliance packages for small nonprofits. Starting at $75 per deliverable.",
   metadataBase: new URL("https://boon.town"),
   openGraph: {
-    title: "Boon Town — Grant Proposals, Handled",
+    title: "Boon Town — Grant Relief for Small Nonprofits",
     description:
       "Your mission is too important for grant paperwork. Get submission-ready proposals delivered to you.",
     url: "https://boon.town",
@@ -35,13 +35,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Boon Town — Grant Proposals, Handled",
+        alt: "Boon Town — Grant Relief for Small Nonprofits",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Boon Town — Grant Proposals, Handled",
+    title: "Boon Town — Grant Relief for Small Nonprofits",
     images: ["/og-image.png"],
   },
 };

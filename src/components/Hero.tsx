@@ -127,9 +127,9 @@ export default function Hero() {
             transition={{ ...spring, delay: 0.2 }}
             className="mb-6 font-serif text-4xl font-bold leading-[1.1] text-teal sm:text-5xl lg:text-[3.5rem]"
           >
-            You lead the mission.
+            The grant shouldn&apos;t be harder
             <br />
-            <span className="text-charcoal">We handle the grant.</span>
+            <span className="text-charcoal">than the mission.</span>
           </m.h1>
 
           <m.p
@@ -138,9 +138,9 @@ export default function Hero() {
             transition={{ ...spring, delay: 0.3 }}
             className="mb-8 max-w-xl text-lg leading-relaxed text-charcoal-light"
           >
-            We handle 80% of the grant &mdash; compliance, budgets, requirements
-            mapping &mdash; so you can focus on the 20% that makes your
-            organization special: the narrative, the mission, the voice.
+            We take on 80% of the grant work &mdash; compliance, budgets,
+            requirement mapping &mdash; so you can focus on the 20% that
+            makes your organization unforgettable.
           </m.p>
 
           <m.div
