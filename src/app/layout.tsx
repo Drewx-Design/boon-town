@@ -29,7 +29,6 @@ export const metadata: Metadata = {
     url: "https://boon.town",
     siteName: "Boon Town",
     type: "website",
-    // TODO: Create og-image.png (1200x630) and add to public/
     images: [
       {
         url: "/og-image.png",

@@ -41,7 +41,7 @@ const tiers = [
 
 export default function PricingPreview() {
   return (
-    <section className="bg-sage-light px-6 py-20 sm:py-28">
+    <section className="px-6 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl">
         <SectionReveal>
           <h2 className="mb-3 text-center font-serif text-3xl font-bold text-teal sm:text-4xl">

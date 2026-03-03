@@ -7,8 +7,7 @@ import {
   Lock,
   ChevronRight,
 } from "lucide-react";
-import SectionReveal from "./SectionReveal";
-import { StaggerContainer, StaggerItem } from "./SectionReveal";
+import SectionReveal, { StaggerContainer, StaggerItem } from "./SectionReveal";
 
 const documentTypes = [
   {
@@ -38,7 +37,6 @@ const compoundingYears = [
     year: "Year 1",
     state: "Foundation",
     items: ["First proposals drafted", "Core docs indexed", "Voice calibrated"],
-    depth: "w-1/3",
   },
   {
     year: "Year 2",
@@ -48,7 +46,6 @@ const compoundingYears = [
       "Budget templates refined",
       "Funder preferences learned",
     ],
-    depth: "w-2/3",
   },
   {
     year: "Year 3",
@@ -58,9 +55,10 @@ const compoundingYears = [
       "Proposals drafted in minutes",
       "Your voice, unmistakably",
     ],
-    depth: "w-full",
   },
 ];
+
+const depthWidths = ["w-1/3", "w-2/3", "w-full"] as const;
 
 export default function TheVault() {
   return (
@@ -83,7 +81,7 @@ export default function TheVault() {
         </SectionReveal>
 
         {/* Main dark teal card — the Vault itself */}
-        <SectionReveal delay={0.05}>
+        <SectionReveal>
           <div className="relative overflow-hidden rounded-2xl bg-teal p-7 sm:p-10 lg:p-12">
             {/* Watermark */}
             <div
@@ -92,16 +90,6 @@ export default function TheVault() {
             >
               VAULT
             </div>
-
-            {/* Decorative vault door lines — subtle concentric arcs */}
-            <div
-              className="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full border border-white/[0.04]"
-              aria-hidden="true"
-            />
-            <div
-              className="pointer-events-none absolute -top-16 -left-16 h-48 w-48 rounded-full border border-white/[0.03]"
-              aria-hidden="true"
-            />
 
             <div className="relative">
               {/* Header with lock icon */}
@@ -154,7 +142,7 @@ export default function TheVault() {
         </SectionReveal>
 
         {/* Compounding value timeline */}
-        <SectionReveal delay={0.12}>
+        <SectionReveal>
           <p className="mb-6 mt-14 text-center text-xs font-medium uppercase tracking-[0.2em] text-charcoal-light/40">
             Value compounds with every use
           </p>
@@ -193,7 +181,7 @@ export default function TheVault() {
                 <div className="mt-5" aria-hidden="true">
                   <div className="h-1 w-full rounded-full bg-teal/6">
                     <div
-                      className={`h-full rounded-full bg-gradient-to-r from-teal/30 to-sage/50 ${y.depth}`}
+                      className={`h-full rounded-full bg-gradient-to-r from-teal/30 to-sage/50 ${depthWidths[i]}`}
                     />
                   </div>
                 </div>
@@ -212,7 +200,7 @@ export default function TheVault() {
         </StaggerContainer>
 
         {/* Trust callout — visually distinct */}
-        <SectionReveal delay={0.2}>
+        <SectionReveal>
           <div className="mt-14 rounded-2xl border border-teal/8 bg-teal-light p-7 sm:p-9">
             <div className="flex gap-4 sm:gap-5">
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-teal/8">

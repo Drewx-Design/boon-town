@@ -1,14 +1,6 @@
-import { ArrowRight, Check } from "lucide-react";
-import SectionReveal from "./SectionReveal";
-import { StaggerContainer, StaggerItem } from "./SectionReveal";
-
-const scores = [
-  { label: "NOFO Coverage", value: "98%", description: "Requirements addressed" },
-  { label: "Budget Coherence", value: "PASS", description: "Numbers match narrative" },
-  { label: "Voice Match", value: "94%", description: "Sounds like your org" },
-  { label: "Compliance", value: "PASS", description: "Zero critical defects" },
-  { label: "Funder Alignment", value: "87%", description: "Matches funder priorities" },
-];
+import { ArrowRight, Calendar, Target, BarChart3, Check } from "lucide-react";
+import SectionReveal, { StaggerContainer, StaggerItem } from "./SectionReveal";
+import { QUALITY_SCORES } from "@/lib/constants";
 
 const deliverables = [
   {
@@ -79,7 +71,7 @@ export default function OutcomeShowcase() {
 
               {/* Score grid */}
               <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
-                {scores.map((score) => (
+                {QUALITY_SCORES.map((score) => (
                   <div
                     key={score.label}
                     className="rounded-xl bg-white/[0.07] p-4"
@@ -154,6 +146,39 @@ export default function OutcomeShowcase() {
             </StaggerItem>
           ))}
         </StaggerContainer>
+
+        {/* Portfolio view teaser — roadmap signal */}
+        <SectionReveal>
+          <div className="mt-14 text-center">
+            <h3 className="mb-3 font-serif text-2xl font-bold text-teal sm:text-3xl">
+              Every grant. Every deadline. One&nbsp;place.
+            </h3>
+            <p className="mx-auto mb-5 max-w-lg text-charcoal-light">
+              Soon: a single view of your entire funding strategy &mdash; active
+              grants, upcoming deadlines, and alignment between what you promised
+              and what you&rsquo;ve delivered.
+            </p>
+            <div className="mb-3 flex items-center justify-center gap-6">
+              {[
+                { Icon: Calendar, label: "Deadlines" },
+                { Icon: Target, label: "Alignment" },
+                { Icon: BarChart3, label: "Progress" },
+              ].map((s) => (
+                <div key={s.label} className="flex flex-col items-center gap-1">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-teal/6">
+                    <s.Icon className="h-4 w-4 text-teal/50" />
+                  </div>
+                  <span className="text-[10px] font-medium text-charcoal-light/40">
+                    {s.label}
+                  </span>
+                </div>
+              ))}
+            </div>
+            <p className="text-xs italic text-charcoal-light/40">
+              On the roadmap
+            </p>
+          </div>
+        </SectionReveal>
       </div>
     </section>
   );

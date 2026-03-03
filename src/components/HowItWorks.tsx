@@ -19,7 +19,7 @@ const youOwn = [
 
 export default function HowItWorks() {
   return (
-    <section className="bg-sage-light px-6 py-20 sm:py-28">
+    <section className="px-6 py-20 sm:py-28">
       <div className="mx-auto max-w-5xl">
         <SectionReveal>
           <h2 className="mb-4 text-center font-serif text-3xl font-bold text-teal sm:text-4xl">

@@ -3,7 +3,7 @@
 import { m } from "framer-motion";
 import WaitlistForm from "./WaitlistForm";
 import { Shield, FileCheck, BarChart3 } from "lucide-react";
-import { SECTION_IDS } from "@/lib/constants";
+import { SECTION_IDS, QUALITY_SCORES } from "@/lib/constants";
 
 const spring = { type: "spring" as const, bounce: 0.15, duration: 0.6 };
 
@@ -52,24 +52,19 @@ function DocumentMockup() {
         transition={{ ...spring, delay: 0.8 }}
         className="absolute -right-3 top-12 flex flex-col gap-2 sm:-right-4"
       >
-        <ScoreBadge
-          icon={<FileCheck className="h-3 w-3" />}
-          label="NOFO Coverage"
-          value="98%"
-          delay={0.9}
-        />
-        <ScoreBadge
-          icon={<Shield className="h-3 w-3" />}
-          label="Budget Coherence"
-          value="PASS"
-          delay={1.0}
-        />
-        <ScoreBadge
-          icon={<BarChart3 className="h-3 w-3" />}
-          label="Voice Match"
-          value="94%"
-          delay={1.1}
-        />
+        {[
+          { icon: <FileCheck className="h-3 w-3" />, index: 0 },
+          { icon: <Shield className="h-3 w-3" />, index: 1 },
+          { icon: <BarChart3 className="h-3 w-3" />, index: 2 },
+        ].map((badge) => (
+          <ScoreBadge
+            key={QUALITY_SCORES[badge.index].label}
+            icon={badge.icon}
+            label={QUALITY_SCORES[badge.index].label}
+            value={QUALITY_SCORES[badge.index].value}
+            delay={0.9 + badge.index * 0.1}
+          />
+        ))}
       </m.div>
     </m.div>
   );
