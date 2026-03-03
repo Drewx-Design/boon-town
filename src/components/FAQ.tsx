@@ -7,8 +7,12 @@ import SectionReveal from "./SectionReveal";
 
 const faqs = [
   {
-    q: "Does Boon Town write the whole proposal for me?",
-    a: "No \u2014 and that\u2019s by design. We handle the 80% that burns your time: compliance parsing, budget construction, requirement mapping, funder alignment. You own the 20% that matters most: your mission story, your organizational voice, your strategic vision. We guarantee the structure. You guarantee the soul.",
+    q: "Will my proposal sound like it was written by AI?",
+    a: "No \u2014 because Boon Town doesn\u2019t write from scratch. It writes from your documents. Your past proposals, your strategic plan, your impact language: that\u2019s the source material. The AI structures and assembles; your voice is the raw material. Funders will hear you, not a template.",
+  },
+  {
+    q: "I\u2019ve never written a grant before \u2014 can I still use this?",
+    a: "Yes. Boon Town handles the structural complexity \u2014 compliance requirements, budget formatting, funder alignment \u2014 so you can focus on what you already know: your organization\u2019s mission and impact. You don\u2019t need grant experience. You need your story.",
   },
   {
     q: "Is this just ChatGPT with a grant template?",
@@ -25,10 +29,6 @@ const faqs = [
   {
     q: "How is this different from hiring a grant consultant?",
     a: "A consultant takes weeks and charges thousands per proposal. We deliver the compliance, budget, and structural work in days \u2014 with quality scores they can\u2019t match. You stay in control of the narrative. Many consultants are joining as partners to serve more clients at better margins.",
-  },
-  {
-    q: "What about post-award compliance?",
-    a: "After you win, we help you stay compliant \u2014 progress reports, financial reporting alerts, and audit-ready documentation so you never miss a deadline.",
   },
 ];
 

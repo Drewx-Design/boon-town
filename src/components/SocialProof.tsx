@@ -11,30 +11,18 @@ export default function SocialProof() {
           </h2>
         </SectionReveal>
 
-        {/* Real human testimonial */}
+        {/* Team design principle statement */}
         <SectionReveal className="mb-12">
           <div className="mx-auto max-w-2xl rounded-2xl border border-teal/6 bg-white p-8 shadow-sm">
             <p className="mb-5 font-serif text-lg leading-relaxed text-charcoal sm:text-xl">
-              &ldquo;I used to spend 40 hours on a single federal proposal.
-              The compliance alone was a full-time job. Having something that
-              handles the structure so I can focus on telling our story &mdash;
-              that&apos;s what I&apos;ve been asking for.&rdquo;
+              &ldquo;We built Boon Town because we watched talented nonprofit
+              leaders spend more time on paperwork than on the mission that
+              brought them here. The grant shouldn&apos;t be the hard
+              part.&rdquo;
             </p>
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal/8">
-                <span className="font-serif text-sm font-bold tracking-wider text-teal">
-                  MT
-                </span>
-              </div>
-              <div>
-                <p className="text-sm font-semibold text-charcoal">
-                  Maria Torres
-                </p>
-                <p className="text-xs text-charcoal-light">
-                  Executive Director, Bright Futures Youth Alliance
-                </p>
-              </div>
-            </div>
+            <p className="text-sm font-medium text-teal">
+              &mdash; The Boon Town team
+            </p>
           </div>
         </SectionReveal>
 

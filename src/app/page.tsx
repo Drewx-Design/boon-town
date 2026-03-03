@@ -1,7 +1,9 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ProblemSection from "@/components/ProblemSection";
+import TheVault from "@/components/TheVault";
 import OutcomeShowcase from "@/components/OutcomeShowcase";
+import PortfolioView from "@/components/PortfolioView";
 import HowItWorks from "@/components/HowItWorks";
 import SocialProof from "@/components/SocialProof";
 import PricingPreview from "@/components/PricingPreview";
@@ -22,7 +24,13 @@ export default function Home() {
         <ProblemSection />
         <SectionDivider topBg="bg-sage-light" fillClass="fill-cream" />
 
+        <TheVault />
+        <SectionDivider topBg="bg-cream" fillClass="fill-sage-light" />
+
         <OutcomeShowcase />
+        <SectionDivider topBg="bg-sage-light" fillClass="fill-cream" />
+
+        <PortfolioView />
         <SectionDivider topBg="bg-cream" fillClass="fill-sage-light" />
 
         <HowItWorks />

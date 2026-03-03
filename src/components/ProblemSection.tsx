@@ -22,6 +22,13 @@ const problems = [
     label: "The Compliance Cliff",
     accent: "border-terracotta",
   },
+  {
+    quote:
+      "Your program stats are in a 2022 email. Your last proposal is on someone\u2019s laptop. Your board list is three versions out of date. Every grant starts with two hours of archaeology before you write a single word.",
+    highlight: "two hours of archaeology",
+    label: "The Archaeology Problem",
+    accent: "border-teal-dark",
+  },
 ];
 
 function highlightPhrase(text: string, phrase: string) {

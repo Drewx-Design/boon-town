@@ -127,9 +127,11 @@ export default function Hero() {
             transition={{ ...spring, delay: 0.2 }}
             className="mb-6 font-serif text-4xl font-bold leading-[1.1] text-teal sm:text-5xl lg:text-[3.5rem]"
           >
-            The grant shouldn&apos;t be harder
+            Finally, someone to handle
             <br />
-            <span className="text-charcoal">than the mission.</span>
+            <span className="text-charcoal">
+              the grant chaos &mdash; so you can lead the mission.
+            </span>
           </m.h1>
 
           <m.p
@@ -138,9 +140,9 @@ export default function Hero() {
             transition={{ ...spring, delay: 0.3 }}
             className="mb-8 max-w-xl text-lg leading-relaxed text-charcoal-light"
           >
-            We take on 80% of the grant work &mdash; compliance, budgets,
-            requirement mapping &mdash; so you can focus on the 20% that
-            makes your organization unforgettable.
+            Boon Town learns your organization. It handles compliance,
+            budgets, and requirements so you can focus on the narrative, the
+            mission, and the voice &mdash; the 20% only you can write.
           </m.p>
 
           <m.div
@@ -157,7 +159,8 @@ export default function Hero() {
             transition={{ delay: 0.7, duration: 0.5 }}
             className="mt-4 text-xs text-charcoal-light/60"
           >
-            You own the narrative. We handle the rest. &middot; Your data stays yours
+            Boon Town remembers so you don&apos;t have to. &middot; Your data
+            stays yours
           </m.p>
         </div>
 

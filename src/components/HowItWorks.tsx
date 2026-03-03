@@ -78,9 +78,9 @@ export default function HowItWorks() {
                   the 80%
                 </h3>
                 <p className="mb-6 max-w-sm leading-relaxed text-white/65">
-                  The compliance, the budget math, the requirement mapping, the
-                  funder alignment scoring &mdash; the heavy lifting that burns
-                  your nights and weekends.
+                  Compliance, budget construction, requirement mapping, funder
+                  alignment &mdash; and every document you approve makes the
+                  next deliverable sharper. Boon Town learns your organization.
                 </p>
 
                 <div className="flex flex-wrap gap-2">
