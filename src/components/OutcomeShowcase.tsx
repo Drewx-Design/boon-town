@@ -104,7 +104,7 @@ export default function OutcomeShowcase() {
         {/* Deliverable progression */}
         <SectionReveal delay={0.1}>
           <p className="mb-6 mt-14 text-center text-xs font-medium uppercase tracking-[0.2em] text-charcoal-light/40">
-            From simple inquiries to complex federal submissions
+            From letters of inquiry to full federal proposals
           </p>
         </SectionReveal>
 

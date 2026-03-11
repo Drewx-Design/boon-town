@@ -35,7 +35,7 @@ const documentTypes = [
 const compoundingYears = [
   {
     year: "Year 1",
-    state: "Foundation",
+    state: "First Steps",
     items: ["First proposals drafted", "Core docs indexed", "Voice calibrated"],
   },
   {

@@ -48,6 +48,10 @@ export default function HowItWorks() {
               </div>
             </div>
           </div>
+          <p className="mt-2 text-center text-xs italic text-charcoal-light/60">
+            No past proposals? No problem &mdash; your 501(c)(3) and the
+            opportunity are enough to get started.
+          </p>
         </SectionReveal>
 
         {/* Flow connector */}

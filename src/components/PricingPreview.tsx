@@ -7,6 +7,7 @@ const tiers = [
   {
     name: "Letter of Inquiry",
     icon: FileText,
+    free: true,
     description: "1\u20132 page LOI with funder alignment mapping and quality scores",
     includes: [
       "Funder alignment mapping",
@@ -29,9 +30,9 @@ const tiers = [
   {
     name: "Federal Proposal",
     icon: ScrollText,
-    description: "Complex federal submissions with full compliance matrix",
+    description: "Federal grants for community-based organizations",
     includes: [
-      "6\u201312 page research strategy",
+      "6\u201312 page program narrative",
       "Biosketches + facilities docs",
       "Data management plan",
       "Complete compliance matrix",
@@ -55,8 +56,8 @@ export default function PricingPreview() {
             a grant consultant charges.
           </p>
           <p className="mx-auto mb-14 max-w-md text-center text-sm text-charcoal-light/60">
-            Pricing details coming soon. Join the waitlist for founding member
-            rates.
+            LOIs under $200. Early access pricing for our first 100
+            organizations.
           </p>
         </SectionReveal>
 
@@ -83,6 +84,12 @@ export default function PricingPreview() {
                 <h3 className="mb-2 font-serif text-lg font-semibold text-teal">
                   {tier.name}
                 </h3>
+
+                {tier.free && (
+                  <p className="mb-2 inline-flex rounded-full bg-sage/15 px-3 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-teal">
+                    First one free
+                  </p>
+                )}
 
                 <p className="mb-6 text-sm leading-relaxed text-charcoal-light">
                   {tier.description}
@@ -115,18 +122,10 @@ export default function PricingPreview() {
         </StaggerContainer>
 
         <SectionReveal className="mt-10">
-          <div className="flex flex-col items-center gap-2 text-center text-sm text-charcoal-light">
-            <p>
-              <span className="font-medium text-terracotta">
-                Your first Letter of Inquiry is free
-              </span>{" "}
-              &mdash; see the quality before you commit.
-            </p>
-            <p>
-              You review and approve every deliverable. You only pay for
-              outcomes, never for access.
-            </p>
-          </div>
+          <p className="text-center text-sm text-charcoal-light">
+            You review and approve every deliverable. You only pay for
+            outcomes, never for access.
+          </p>
         </SectionReveal>
       </div>
     </section>
