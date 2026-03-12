@@ -51,7 +51,7 @@ export default function SocialProof() {
         {/* Integration logos */}
         <SectionReveal>
           <p className="mb-6 text-center text-xs font-medium uppercase tracking-widest text-charcoal-light/40">
-            Works with the grant systems you already use
+            Built for the grant systems and databases you rely on
           </p>
           <div className="flex flex-wrap items-center justify-center gap-8">
             {["Grants.gov", "SAM.gov", "Foundation Directory"].map((name) => (
